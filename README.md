@@ -1,1 +1,1 @@
-# gloacademi-site-computer-assembly
+Интенсив по верстке от glo academi
