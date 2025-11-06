@@ -11,6 +11,17 @@
 
 @font-face {
     font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: local('Roboto-Medium'), local('Roboto-Medium'),
+        url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
     src: url('../fonts/Roboto-Bold.eot');
     src: local('Roboto Bold'), local('Roboto-Bold'),
         url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
@@ -69,6 +80,16 @@ h6 {
     margin: 0 auto;
 }
 
+:root {
+    --text-size-medium: 1.6rem;
+}
+
+.block_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .button {
     border-radius: 5rem;
     padding: 1rem 3rem;
@@ -98,7 +119,7 @@ h6 {
 }
 
 .header_nav a {
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 150%;
 }
 
@@ -114,7 +135,7 @@ h6 {
 }
 
 .header_button {
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
     line-height: 150%;
 }
@@ -152,7 +173,7 @@ h6 {
 
 .main-display_button {
     background: linear-gradient(141deg, #df5950 0%, #451046 100%);
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 150%;
 }
 
@@ -177,7 +198,7 @@ h6 {
 }
 
 .timer_text {
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     opacity: 0.4;
     line-height: 140%;
 }
@@ -212,7 +233,7 @@ h6 {
 }
 
 .work_description {
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
 }
 
@@ -221,9 +242,14 @@ h6 {
     position: relative;
 }
 
+.process .process_img {
+    transform: rotate(45deg);
+}
+
 .process_img {
     width: 9rem;
     height: 4.5rem;
+    margin-right: 2rem;
 }
 
 .process_header {
@@ -231,6 +257,7 @@ h6 {
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 140%;
+    padding-top: 1rem;
 }
 
 .process_title {
@@ -240,7 +267,7 @@ h6 {
 .process_decription {
     max-width: 41.1rem;
     margin-bottom: 8rem;
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
     opacity: 0.5;
 }
@@ -276,4 +303,103 @@ h6 {
     font-size: 1.4rem;
     line-height: 160%;
     opacity: 0.5;
+}
+
+.command {
+    padding-bottom: 20rem;
+}
+
+.commad_title {
+    margin-bottom: 11.9rem;
+}
+
+.commad_header {
+    margin-bottom: 0;
+}
+
+.command_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 11rem;
+    padding-right: 11rem;
+}
+
+.command_item {
+    flex-direction: column;
+}
+
+.command_img {
+    width: 19rem;
+    height: 19rem;
+    margin-bottom: 4rem;
+    border-radius: 50%;
+}
+
+.command_name {
+    line-height: 140%;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.command_professional {
+    font-size: var(--text-size-medium);
+    line-height: 160%;
+    margin-bottom: 3rem;
+}
+
+.command_link {
+    font-size: var(--text-size-medium);
+    line-height: 150%;
+    border: .1rem solid #fff;
+}
+
+.assembly {
+    padding-bottom: 24.4rem;
+}
+
+.assembly_wrap {
+    flex-direction: column;
+}
+
+.assembly_header {
+    font-weight: 700;
+    font-size: 4.8rem;
+    margin-bottom: 3rem;
+    line-height: 140%;
+}
+
+.assembly_decription {
+    font-size: var(--text-size-medium);
+    line-height: 160%;
+    margin-bottom: 4.52rem;
+}
+
+.assembly_button {
+    background: linear-gradient(141deg, #df5950 0%, #451046 100%);
+    font-size: var(--text-size-medium);
+    line-height: 150%;
+    font-weight: 700;
+    margin-bottom: 5.08rem;
+}
+
+.assembly_socials {
+    display: flex;
+
+}
+
+.assembly_item {
+    border-radius: 50%;
+    background: linear-gradient(142deg, #c89afc 0%, #7c6afa 100%);
+    width: 5rem;
+    height: 5rem;
+}
+
+.assembly_item img {
+    width: 50%;
+    height: 50%;
+}
+
+.assembly_item:not(:last-child) {
+    margin-right: 3rem;
 }
